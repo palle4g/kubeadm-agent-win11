@@ -9,7 +9,7 @@ every reboot.
 
 ## Project layout
 
-kubeadm-agent-win11/ ├── src/ │ ├── Start-Cluster.ps1 # build + recover the cluster │ ├── Stop-Cluster.ps1 # pause: stop VMs, keep them │ ├── Remove-Cluster.ps1 # teardown: delete + purge VMs │ └── Backup-ClusterFiles.ps1 # back up each VM home dir ├── docs/ │ ├── USAGE.md │ ├── TROUBLESHOOTING.md │ └── CHANGELOG.md ├── README.md ├── LICENSE └── logs/ # runtime transcripts (git-ignored)
+kubeadm-agent-win11/ ├── src/ │ ├── Start-Cluster.ps1 # build + recover the cluster │ ├── Stop-Cluster.ps1 # pause: stop VMs, keep them │ └── Remove-Cluster.ps1 # teardown: delete + purge VMs ├── scripts/ │ └── Backup-ClusterFiles.ps1 # back up each VM home dir ├── docs/ │ ├── USAGE.md │ ├── TROUBLESHOOTING.md │ └── CHANGELOG.md ├── README.md ├── LICENSE ├── .gitignore ├── .gitattributes └── logs/ # runtime transcripts (git-ignored)
 
 ## What it does
 
