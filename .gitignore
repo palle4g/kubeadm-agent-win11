@@ -1,0 +1,25 @@
+# Runtime logs
+logs/
+*.log
+
+# Local kubeconfig or secrets (never commit these)
+*.kubeconfig
+*kubeconfig*
+.kube/
+admin.conf
+
+# Kubeadm join tokens / certs (belt-and-suspenders)
+*token*
+*.crt
+*.key
+*.pem
+
+# Backups (live outside the repo, but ignore here too just in case)
+k8s-backups/
+*.tar.gz
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.vscode/
+*.swp
